@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1b1d2e;
+  height: 100vh;
+  overflow-y: scroll;
+  color: whitesmoke;
+}
+
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
+  background: -webkit-linear-gradient(#f44336, #ee8881);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0 16px 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+header h1 a:hover {
+  background: -webkit-linear-gradient(#f44336, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  background-color: #1b1d2e;
+}
+
+.navbar .nav {
+  background: rgba(255, 255, 255, 0.1);
+  width: 1000px;
+  left: 183px;
+  top: 164px;
+  border: 0.3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.18);
+}
+
+.navbar .nav .active {
+  background-color: #1d1e22;
+  color: #fcb045 !important;
+}
+
+.navbar .nav .nav-link:hover {
+  background-color: #1d1e22;
+  color: #fcb045;
+}
+
+/* .navbar .nav .nav-link:active {
+  color: #fcb045 !important;
+} */
+
+.navbar .nav .nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fefefe;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 50px 10px 50px;
+  line-height: 25px;
+  border-right: 0.3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+}
+
+.navbar .nav .nav-link a:hover {
+  color: #535559;
+  background-color: linear-gradient(
+    92.91deg,
+    rgba(113, 170, 255, 0.22) 0%,
+    rgba(113, 170, 255, 0.0308) 102.27%
+  );
+}
+
+.navbar .nav .nav-link:active {
+  color: white;
+  background-color: #1d1e22;
+}
+
+#main .custom-container .map .map-img {
+  /* background-image: url(/sources/pampanga-map.png); */
+  margin: 60px 0 50px 0;
+  max-width: 100%;
+  /* background-size: contain;
+  background-position: center; */
+  height: 100vh;
+  /* background-repeat: no-repeat; */
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#main .custom-container .map .textover {
+  position: relative;
+}
+
+#main .custom-container .map .textover figcaption.san-fernando {
+  position: absolute;
+  top: 18vh;
+  left: 71vh;
+}
+
+#main .custom-container .map .textover figcaption.angeles {
+  position: absolute;
+  top: 52vh;
+  left: 88vh;
+}
+
+#main .custom-container .map-img .san-fernando {
+  position: absolute;
+  top: 38vh;
+  left: 48vh;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+#main .custom-container .map-img .angeles {
+  position: absolute;
+  top: 69vh;
+  left: 63vh;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+#main .custom-container .modal .modal-title {
+  color: #1d1e22;
+  font-weight: 600;
+}
+
+#main .custom-container .modal p {
+  color: #1d1e22;
+}
+
+#main .custom-container .modal img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#main .custom-container .modal .card-group .card {
+  margin-right: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#main .custom-container .modal .del {
+  font-weight: 600;
+  color: #1d1e22;
+}
+
+#main .custom-container .modal .card-group .card .card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1e22;
+}
+
+/* Popover San Fernando */
+#main .custom-container .san-fernando a.btn {
+  border: none;
+  font-weight: 600;
+}
+
+#main .custom-container .san-fernando a.btn:hover {
+  border: none;
+  color: #f44336;
+  font-weight: 600;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale (1.2);
+}
+
+#main .custom-container .san-fernando a.btn:active {
+  border: none;
+  color: #f44336;
+  font-weight: 600;
+}
+
+#main .custom-container .san-fernando .popover {
+  margin-left: 30vh;
+}
+
+/* About CSS */
+
+#about .container .carousel img {
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+
+#about .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #1d1e22;
+  width: 25%;
+}
+
+/* Popover Angeles */
+
+#main .custom-container .angeles a.btn {
+  border: none;
+  font-weight: 600;
+}
+
+#main .custom-container .angeles a.btn:hover {
+  border: none;
+  color: #f44336;
+  font-weight: 600;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale (1.2);
+}
+
+#main .custom-container .angeles a.btn:active {
+  border: none;
+  color: #f44336;
+  font-weight: 600;
+}
+
+#main .custom-container .angeles .modal {
+  margin-left: 30vh;
+}
+
+/* Cities CSS */
+
+#cities {
+  padding-bottom: 60px;
+}
+#cities .container .card .row .col-img .img-fluid {
+  margin: 10px;
+  width: 100%;
+  height: 92%;
+  border-radius: 8px;
+}
+
+#cities .container .card {
+  background: linear-gradient(
+    98.29deg,
+    rgba(255, 255, 255, 0.195) -0.68%,
+    rgba(255, 255, 255, 0.039) 102.57%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
+}
+
+#cities .container .card .row .card-title {
+  color: whitesmoke;
+}
+
+#cities .container .card .row .card-body {
+  padding: 10px 10px 10px 30px;
+  color: whitesmoke;
+}
+
+#cities .container .card .row .card-body .card-text small {
+  color: #f44336;
+}
+
+/* Tourist Spots CSS */
+#tourist {
+  padding-bottom: 60px;
+}
+
+#tourist .carousel {
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#tourist .carousel img {
+  border-radius: 20px;
+}
+
+#tourist .carousel2 {
+  width: 700px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#tourist .carousel2 img {
+  border-radius: 20px;
+}
+
+#tourist .carousel2 .carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+#tourist .carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+/* Delicacy CSS */
+#delicacy .container .card {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#delicacy .container .card {
+  background: linear-gradient(
+    98.29deg,
+    rgba(255, 255, 255, 0.195) -0.68%,
+    rgba(255, 255, 255, 0.039) 102.57%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
+}
+
+#delicacy .container .card .card-title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#delicacy .container .card .text-muted {
+  color: #f44336 !important;
+}
