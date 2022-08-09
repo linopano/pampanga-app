@@ -12,6 +12,8 @@ body {
   height: 100vh;
   overflow-y: scroll;
   color: whitesmoke;
+  /* background-image: url("/sources/bg-1.png"); */
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -59,6 +61,10 @@ header h1 a:hover {
 .navbar .nav .active {
   background-color: #1d1e22;
   color: #fcb045 !important;
+}
+
+.navbar .nav .map-nav {
+  color: #f44336 !important;
 }
 
 .navbar .nav .nav-link:hover {
@@ -216,6 +222,7 @@ header h1 a:hover {
 .carousel-control-next-icon {
   color: #1d1e22;
   width: 25%;
+  height: 50px;
 }
 
 /* Popover Angeles */
@@ -298,6 +305,13 @@ header h1 a:hover {
   width: 700px;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+#tourist .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #1d1e22;
+  height: 50px;
+  width: 40px;
 }
 
 #tourist .carousel2 img {
