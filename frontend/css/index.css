@@ -304,45 +304,31 @@ header h1 a:hover {
 }
 
 /* Tourist Spots CSS */
-#tourist {
-  padding-bottom: 60px;
+
+#tourist .container {
+  max-width: 1000px;
 }
 
-#tourist .carousel {
-  width: 700px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-#tourist .carousel img {
-  border-radius: 20px;
-}
-
-#tourist .carousel2 {
-  width: 700px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-#tourist .carousel-control-prev-icon,
-.carousel-control-next-icon {
+#tourist .container .carousel h4 {
   color: #1d1e22;
-  height: 50px;
-  width: 40px;
 }
 
-#tourist .carousel2 img {
-  border-radius: 20px;
+#tourist .container .carousel p {
+  color: #1d1e22;
 }
 
-#tourist .carousel2 .carousel-caption {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+#tourist .container .carousel .row {
+  justify-content: center;
 }
 
-#tourist .carousel .carousel-caption {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+#tourist .container .carousel .row .card {
+  max-width: 90%;
+  justify-content: center;
+  border-radius: 16px;
+}
+#tourist .container .carousel .carousel-inner .carousel-item .row .card img {
+  border-start-start-radius: 16px !important;
+  border-start-end-radius: 16px !important;
 }
 
 /* Delicacy CSS */
