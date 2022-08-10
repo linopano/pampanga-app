@@ -11,8 +11,12 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+
+    <!-- CSS stylesheet -->
+
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/owl.carousel.min.scss" />
+    <link rel="stylesheet" href=".css/owl.carousel.min.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,7 +67,7 @@
     <main class="main">
       <section id="tourist">
         <div class="carousel container justify-content-center">
-          <h4 class="mx-3 mt-5"><b>San Fernando City</b></h4>
+          <h4 id="sftour" class="mx-3 mt-5"><b>San Fernando City</b></h4>
 
           <div
             id="carouselExampleCaptions"
@@ -174,7 +178,7 @@
         </div>
 
         <div class="carousel2 container justify-content-center">
-          <h4 id="angeles-tour" class="mx-3"><b>Angeles City</b></h4>
+          <h4 id="angelestour" class="mx-3"><b>Angeles City</b></h4>
 
           <div
             id="carouselExampleCaptions2"
@@ -292,9 +296,9 @@
           </div>
           <!-- Card Slider -->
           <div class="row">
-            <div class="major-carousel js-carousel owl-carousel">
+            <div class="owl-carousel major-carousel js-carousel">
               <div class="media media-custom d-block text-left">
-                <img src="../sources/dino-island.jpg" class="img-fluid w-100" />
+                <img src="../sources/dino-island.jpg" class="img-fluid w-40" />
               </div>
               <div class="media-body">
                 <h5 class="mt-0">Dinosaurs Island</h5>
@@ -304,7 +308,7 @@
                 </p>
               </div>
               <div class="media media-custom d-block text-left">
-                <img src="../sources/aqua-club.jpg" class="img-fluid w-100" />
+                <img src="../sources/aqua-club.jpg" class="img-fluid w-40" />
               </div>
               <div class="media-body">
                 <h5 class="mt-0">Aqua Beach Club/h5>
@@ -313,7 +317,7 @@
                 </p>
               </div>
               <div class="media media-custom d-block text-left">
-                <img src="../sources/puning.jpg" class="img-fluid w-100" />
+                <img src="../sources/puning.jpg" class="img-fluid w-40" />
               </div>
               <div class="media-body">
                 <h5 class="mt-0">Puning Hot Spring</h5>
@@ -327,7 +331,8 @@
       </section>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
@@ -335,7 +340,45 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/script.js"></script>
+
+    <!-- Owl Carousel -->
+
+    <script>
+      
+$(document).ready(function(){
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  autoplay: true,
+  stagePadding: 7,
+  margin: 20,
+  animateOut: "fadeOut",
+  animateIn: "fadeIn",
+  nav: true,
+  autoplayHoverPause: true,
+  items: 4,
+  navText: [
+    "<span class = 'fa fa-chevron-left'</span>",
+    "<span class = 'fa fa-chevron-right'</span>",
+  ],
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+    },
+    600: {
+      items: 2,
+      nav: false,
+    },
+    1000: {
+      items: 4,
+      nav: true,
+      loop: false,
+    },
+  },
+})
+});
+    </script>
+    
+
   </body>
 </html>
