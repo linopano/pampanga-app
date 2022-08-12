@@ -121,7 +121,7 @@ header h1 a:hover {
 
 #main .custom-container .map .map-img {
   /* background-image: url(/sources/pampanga-map.png); */
-  margin: 60px 0 50px 0;
+  margin: 50px 0 50px 0;
   max-width: 100%;
   /* background-size: contain;
   background-position: center; */
@@ -306,7 +306,7 @@ header h1 a:hover {
 /* Tourist Spots CSS */
 
 #tourist .container {
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 #tourist .container .carousel h4 {
@@ -319,16 +319,27 @@ header h1 a:hover {
 
 #tourist .container .carousel .row {
   justify-content: center;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 #tourist .container .carousel .row .card {
-  max-width: 90%;
+  max-width: 95%;
+  height: 90%;
   justify-content: center;
   border-radius: 16px;
+  margin-left: 40px;
 }
+
+#tourist .container .carousel .row .card .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 #tourist .container .carousel .carousel-inner .carousel-item .row .card img {
   border-start-start-radius: 16px !important;
   border-start-end-radius: 16px !important;
+  height: 75%;
 }
 
 /* Delicacy CSS */
