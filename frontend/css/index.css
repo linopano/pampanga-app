@@ -8,12 +8,26 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #1b1d2e;
+  /* background-color: #1b1d2e; */
   height: 100vh;
   overflow-y: scroll;
-  color: whitesmoke;
-  /* background-image: url("/sources/bg-1.png"); */
+  color: #1b1d2e;
+  /* background: linear-gradient(
+      0deg,
+      rgba(27, 29, 46, 0.69),
+      rgba(27, 29, 46, 0.69)
+    ),
+    url("/sources/angeles.webp"); */
+  background-size: cover !important;
+
+  background-image: url("/sources/bgg.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body img.bg {
+  min-height: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -45,29 +59,29 @@ header h1 a:hover {
 }
 
 .navbar {
-  background-color: #1b1d2e;
+  background-color: transparent;
 }
 
 .navbar .nav {
-  /* background: white; */
+  background: white;
   width: 1000px;
   left: 183px;
   top: 164px;
   border: 0.3px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  /* box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.18); */
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.18);
 
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.71) 0%,
     rgba(255, 255, 255, 0.8) 100%
-  );
+  ); */
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
 }
 
 .navbar .nav .nav-item .nav-link {
-  color: #1b1d2e;
+  color: #535559;
 }
 
 .navbar .nav .active {
@@ -79,7 +93,7 @@ header h1 a:hover {
 }
 
 .navbar .nav .map-nav {
-  color: #1b1d2e !important;
+  color: #535559 !important;
 }
 
 .navbar .nav .nav-link:hover {
@@ -227,6 +241,10 @@ header h1 a:hover {
 
 /* About CSS */
 
+#about .container {
+  padding-bottom: 30px;
+}
+
 #about .container .carousel img {
   align-items: center;
   justify-content: center;
@@ -282,21 +300,28 @@ header h1 a:hover {
 
 #cities .container .card {
   background: linear-gradient(
-    98.29deg,
-    rgba(255, 255, 255, 0.195) -0.68%,
-    rgba(255, 255, 255, 0.039) 102.57%
+    97.91deg,
+    rgba(255, 255, 255, 0.72) 80%,
+    rgba(255, 255, 255, 0.657) 100.05%
   );
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
 }
 
 #cities .container .card .row .card-title {
-  color: whitesmoke;
+  color: #1d1e22;
 }
 
 #cities .container .card .row .card-body {
   padding: 10px 10px 10px 30px;
-  color: whitesmoke;
+  color: #1d1e22;
+  background: linear-gradient(
+    98.29deg,
+    rgba(255, 255, 255, 0.195) -0.68%,
+    rgba(255, 255, 255, 0.039) 102.57%
+  );
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
 }
 
 #cities .container .card .row .card-body .card-text small {
@@ -328,7 +353,7 @@ header h1 a:hover {
   height: 90%;
   justify-content: center;
   border-radius: 16px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 #tourist .container .carousel .row .card .card-title {
@@ -342,6 +367,11 @@ header h1 a:hover {
   height: 75%;
 }
 
+#tourist .container .row .btn {
+  background-color: #f44336;
+  color: white;
+}
+
 /* Delicacy CSS */
 #delicacy .container .card {
   margin-right: 10px;
@@ -349,11 +379,7 @@ header h1 a:hover {
 }
 
 #delicacy .container .card {
-  background: linear-gradient(
-    98.29deg,
-    rgba(255, 255, 255, 0.195) -0.68%,
-    rgba(255, 255, 255, 0.039) 102.57%
-  );
+  background: white;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 1px 24px rgba(0, 0, 0, 0.1));
 }
