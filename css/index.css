@@ -13,7 +13,7 @@ body {
   overflow-y: scroll;
   color: #1b1d2e;
   background-size: cover !important;
-  background-image: url("../sources/bgg.png");
+  background-image: url("/css/bgg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
