@@ -12,15 +12,8 @@ body {
   height: 100vh;
   overflow-y: scroll;
   color: #1b1d2e;
-  /* background: linear-gradient(
-      0deg,
-      rgba(27, 29, 46, 0.69),
-      rgba(27, 29, 46, 0.69)
-    ),
-    url("/sources/angeles.webp"); */
   background-size: cover !important;
-
-  background-image: url("/sources/bgg.png");
+  background-image: url("./sources/bgg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
