@@ -20,7 +20,7 @@ body {
     url("/sources/angeles.webp"); */
   background-size: cover !important;
 
-  background-image: url("./sources/bgg.png");
+  background-image: url("/sources/bgg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
